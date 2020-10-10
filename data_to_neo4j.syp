@@ -1,0 +1,13 @@
+CREATE (school: class {name: "Средняя школа №218"}),
+(twenty_five: number {value: 25}),
+(twenty_five) <- [:number_of_children {name: "количество человек"}] - (first_class_A: node {name: "1A"}) - [:class {name: "класс"}] -> (school),
+(twenty_two: number {value: 22}),
+(twenty_two) <- [:number_of_children {name: "количество человек"}] - (first_class_B: node {name: "1Б"}) - [:class {name: "класс"}] -> (school),
+(twenty: number {value: 20}),
+(twenty) <- [:number_of_children {name: "количество человек"}] - (first_class_V: node {name: "1В"}) - [:class {name: "класс"}] -> (school),
+(thirty: number {value: 30}),
+(thirty) <- [:number_of_children {name: "количество человек"}] - (second_class_A: node {name: "2A"}) - [:class {name: "класс"}] -> (school),
+(thirty_one: number {value: 31}),
+(thirty_one) <- [:number_of_children {name: "количество человек"}] - (second_class_B: node {name: "2Б"}) - [:class {name: "класс"}] -> (school),
+(thirty_two: number {value: 32}),
+(thirty_two) <- [:number_of_children {name: "количество человек"}] - (second_class_V: node {name: "2В"}) - [:class {name: "класс"}] -> (school)
